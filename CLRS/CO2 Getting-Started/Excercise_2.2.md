@@ -29,3 +29,5 @@ SELECTION-SORT(A):
       A[i] = A[min]
       A[min] = temp
 ```
+
+![](https://i.ibb.co/Lzm91nZ/my-basic-app.png)
