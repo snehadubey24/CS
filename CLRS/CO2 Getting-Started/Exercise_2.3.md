@@ -98,9 +98,15 @@ while i > 0 and A[i] > key
     i = i - 1
 ```
 
-```cpp
+```
 This loop serves two purposes:
-A linear search to scan (backward) through the sorted sub-array to find the proper position for key.
-Shift the elements greater than key towards the end to insert key in the proper position.
-Although we can reduce the number of comparisons by using binary search to accomplish purpose 1, we still need to shift all the elements greater than key towards the end of the array to insert key. And this shifting of elements runs at Θ(n) time, even in average case (as we need to shift half of the elements). So, the overall worst-case running time of insertion sort will still be Θ(n2).
+
+  1. A linear search to scan (backward) through the sorted sub-array to find the proper position for key.
+
+  2. Shift the elements greater than key towards the end to insert key in the proper position.
+
+Although we can reduce the number of comparisons by using binary search to accomplish purpose 1,
+we still need to shift all the elements greater than key towards the end of the array to insert key.
+And this shifting of elements runs at Θ(n) time, even in average case (as we need to shift half of the elements).
+So, the overall worst-case running time of insertion sort will still be Θ(n2).
 ```
