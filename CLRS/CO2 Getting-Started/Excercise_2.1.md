@@ -47,7 +47,10 @@ return NIL
 Initialization : Initially the subarray is empty. So, none of its’ elements are equal to v.
 
 
-Maintenance : In i-th iteration, we check whether A[i] is equal to v or not. If yes, we terminate the loop or we continue the iteration. So, if the subarray A[1..i−1] did not contain v before the i-th iteration, the subarray A[1..i] will not contain v before the next iteration (unless i-th iteration terminates the loop).
+Maintenance : In i-th iteration, we check whether A[i] is equal to v or not.
+If yes, we terminate the loop or we continue the iteration.
+So, if the subarray A[1..i−1] did not contain v before the i-th iteration,
+the subarray A[1..i] will not contain v before the next iteration (unless i-th iteration terminates the loop).
 
 
 Termination: The loop terminates in either of the following cases,
