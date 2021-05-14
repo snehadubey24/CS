@@ -110,3 +110,22 @@ we still need to shift all the elements greater than key towards the end of the 
 And this shifting of elements runs at Θ(n) time, even in average case (as we need to shift half of the elements).
 So, the overall worst-case running time of insertion sort will still be Θ(n2).
 ```
+
+### 7. Describe a O(n lg n) time algorithm that, given a set S of n integers and another integer x, determines whether or not there exist two elements in S whose sum is exactly x.
+
+`Answer` :
+
+`First we sort S. Afterwards, we iterate it and for each element i we perform a binary search to see if there is an element equal to x−i. If one is found, the algorithm returns true. Otherwise, it returns false.`
+
+`We iterate n elements and perform binary search for each on in an n-sized array, which leads to Θ(nlgn)-time. If we sort first (with merge sort) it will introduce another Θ(nlgn) time, that would change the constant in the final algorithm, but not the asymptotic time.`
+
+```cpp
+PAIR-EXISTS(S, x):
+  A = MERGE-SORT(S)
+
+  for i = 1 to S.length
+      if BINARY-SEARCH(A, x - S[i]) != NIL
+          return true
+
+  return false
+```
