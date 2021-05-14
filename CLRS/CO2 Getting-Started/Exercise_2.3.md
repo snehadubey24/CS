@@ -85,3 +85,7 @@ RECURSIVE-BINARY-SEARCH(A, v, low, high)
 ```
 
 `Intuitively, in worst case, i.e. when v is not at all present in A, we need to binary search over the whole array to return NIL. So in worst-case, we need to repeatedly divide the array by 2. So the running time is nothing but how many times the input size can be divided by 2, i.e. lgn. And using recurrence formula, we can say running time T(n)=T((n−1)/2)+Θ(1)=Θ(lgn).`
+
+### 6. Observe that the while loop of lines 5–7 of the INSERTION-SORT procedure in Section 2.1 uses a linear search to scan (backward) through the sorted subarray A[1...j-1]. Can we use a binary search (see Exercise 2.3-5) instead to improve the overall worst-case running time of insertion sort to O(n lg n)?
+
+`Answer` :
