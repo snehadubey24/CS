@@ -8,5 +8,5 @@
 
 ```
 The leading term of the function ignoring the constant coefficient is n3 .
- So, the function in θ−notation will be θ(n3).
+So, the function in θ−notation will be θ(n3).
 ```
