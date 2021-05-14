@@ -31,3 +31,15 @@ SELECTION-SORT(A):
 ```
 
 ![](https://i.ibb.co/Lzm91nZ/my-basic-app.png)
+
+### 3. Consider linear search again (see Exercise 2.1-3). How many elements of the input sequence need to be checked on the average, assuming that the element being searched for is equally likely to be any element in the array? How about in the worst case? What are the average-case and worst-case running times of linear search in O notation? Justify your answers
+
+`Answer` :
+
+```
+If the element is present in the sequence, half of the elements are likely to be
+checked before it is found in the average case. In the worst case,
+all of them will be checked. That is, n/2 checks for the average case and n for the worst case.
+
+Both of them are Θ(n).
+```
