@@ -49,3 +49,39 @@ MERGE(A, p, q, r)
 
 `Answer` :
 ![](https://i.ibb.co/mykT6WX/my-basic-app.png)
+
+### 5. Referring back to the searching problem (see Exercise 2.1-3), observe that if the sequence A is sorted, we can check the midpoint of the sequence against and eliminate half of the sequence from further consideration. The binary search algorithm repeats this procedure, halving the size of the remaining portion of the sequence each time. Write pseudocode, either iterative or recursive, for binary search. Argue that the worst-case running time of binary search is O(lg n).
+
+`Answer` :
+
+PseudoCode :
+
+```cpp
+ITERATIVE-BINARY_SEARCH(A, v)
+ low = A[1]
+ high = A[A.length]
+ while low &le; high
+  mid = (low + high) / 2
+  if v == A[mid]
+   return mid
+  elseif v > A[mid]
+   low = mid + 1
+  else
+   high = mid - 1
+ return NIL
+```
+
+```cpp
+RECURSIVE-BINARY-SEARCH(A, v, low, high)
+ if low > high
+    return NIL
+ mid = (low + high) / 2
+ if v == A[mid]
+  return mid
+ elseif v > A[mid]
+  RECURSIVE-BINARY-SEARCH(A, v, mid + 1, high)
+ else
+  RECURSIVE-BINARY-SEARCH(A, v, low, mid - 1)
+```
+
+`Intuitively, in worst case, i.e. when v is not at all present in A, we need to binary search over the whole array to return NIL. So in worst-case, we need to repeatedly divide the array by 2. So the running time is nothing but how many times the input size can be divided by 2, i.e. lgn. And using recurrence formula, we can say running time T(n)=T((n−1)/2)+Θ(1)=Θ(lgn)`
