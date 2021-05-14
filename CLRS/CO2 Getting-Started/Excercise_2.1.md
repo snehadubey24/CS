@@ -63,3 +63,27 @@ In either case, our algorithm does exactly what was required, which means the al
 ### 4. Consider the problem of adding two n-bit binary integers, stored in two n-element arrays A and B. The sum of the two integers should be stored in binary form in an (n + 1)-element array C. State the problem formally and write pseudocode foradding the two integers.
 
 `Answer` :
+
+```
+Two n-bit binary integers stored in two n-element array of binary digits (either 0 or 1)
+
+A = <a1,a2,...,an> and B = <b1,b2,...,bn>
+
+Output : A (n+1)-bit binary integer stored in (n+1)-element array of binary digits (either 0 or 1) C=⟨c1,c2,...,cn+1⟩ such that C=A+B.
+```
+
+```cpp
+Binary-Add(A,B):
+
+n = A.length
+for i = 1 to (n + 1)
+    C[i] = 0
+
+carry = 0
+for i = n to 1
+    C[i] = (A[i] + B[i] + carry) % 2
+    carry = (A[i] + B[i] + carry) / 2
+C[i] = carry
+
+return C
+```
