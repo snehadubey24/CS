@@ -89,3 +89,18 @@ RECURSIVE-BINARY-SEARCH(A, v, low, high)
 ### 6. Observe that the while loop of lines 5–7 of the INSERTION-SORT procedure in Section 2.1 uses a linear search to scan (backward) through the sorted subarray A[1...j-1]. Can we use a binary search (see Exercise 2.3-5) instead to improve the overall worst-case running time of insertion sort to O(n lg n)?
 
 `Answer` :
+
+Insertion sort has a loop like this
+
+```cpp
+while i > 0 and A[i] > key
+    A[i + 1] = A[i]
+    i = i - 1
+```
+
+```cpp
+This loop serves two purposes:
+A linear search to scan (backward) through the sorted sub-array to find the proper position for key.
+Shift the elements greater than key towards the end to insert key in the proper position.
+Although we can reduce the number of comparisons by using binary search to accomplish purpose 1, we still need to shift all the elements greater than key towards the end of the array to insert key. And this shifting of elements runs at Θ(n) time, even in average case (as we need to shift half of the elements). So, the overall worst-case running time of insertion sort will still be Θ(n2).
+```
