@@ -27,3 +27,11 @@ In image processing application Convex hull is used.
     Disadvantages:
         1.  Random access takes n time.
         2.  Extra memory is utilized in making of index
+
+### 4. How are the shortest-path and traveling-salesman problems given above similar? How are they different?
+
+`Answer` :
+
+    Similar :  Both are graph algorithms and find path.
+
+    Difference : The shortest path algorithm needs 2 points, where as salesman algorithms needs a path between more points that returns to first point.
