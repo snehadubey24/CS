@@ -43,3 +43,13 @@ all of them will be checked. That is, n/2 checks for the average case and n for 
 
 Both of them are Θ(n).
 ```
+
+### 4. How can we modify almost any algorithm to have a good best-case running time?
+
+`Answer` :
+
+```
+We can modify it to handle the best-case efficiently. For example,
+if we modify merge-sort to check if the array is sorted and just return it,
+the best-case running time will be Θ(n).
+```
