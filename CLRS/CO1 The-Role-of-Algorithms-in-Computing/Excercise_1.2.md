@@ -6,7 +6,8 @@
 
 `Answer` :
 
-    Maps are one of the application which requires algorithmic content. One of the basic and widely used algorithm is the shortest path finder between 2 points.
+    Maps are one of the application which requires algorithmic content.
+    One of the basic and widely used algorithm is the shortestpath finder between 2 points.
 
 ### 2. Suppose we are comparing implementations of insertion sort and merge sort on thesame machine. For inputs of size n, insertion sort runs in 8n2 steps, while mergesort runs in 64n lg n steps. For which values of n does insertion sort beat merge sort?
 
