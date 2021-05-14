@@ -72,7 +72,8 @@ Two n-bit binary integers stored in two n-element array of binary digits (either
 
 A = <a1,a2,...,an> and B = <b1,b2,...,bn>
 
-Output: A (n+1)-bit binary integer stored in (n+1)-element array of binary digits (either 0 or 1) C=⟨c1,c2,...,cn+1⟩ such that C=A+B.
+Output: A (n+1)-bit binary integer stored in (n+1)-element array of binary digits
+(either 0 or 1) C=⟨c1,c2,...,cn+1⟩ such that C=A+B.
 ```
 
 ```cpp
