@@ -84,4 +84,4 @@ RECURSIVE-BINARY-SEARCH(A, v, low, high)
   RECURSIVE-BINARY-SEARCH(A, v, low, mid - 1)
 ```
 
-`Intuitively, in worst case, i.e. when v is not at all present in A, we need to binary search over the whole array to return NIL. So in worst-case, we need to repeatedly divide the array by 2. So the running time is nothing but how many times the input size can be divided by 2, i.e. lgn. And using recurrence formula, we can say running time T(n)=T((n−1)/2)+Θ(1)=Θ(lgn)`
+`Intuitively, in worst case, i.e. when v is not at all present in A, we need to binary search over the whole array to return NIL. So in worst-case, we need to repeatedly divide the array by 2. So the running time is nothing but how many times the input size can be divided by 2, i.e. lgn. And using recurrence formula, we can say running time T(n)=T((n−1)/2)+Θ(1)=Θ(lgn).`
