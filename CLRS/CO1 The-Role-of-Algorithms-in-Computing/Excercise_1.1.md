@@ -14,4 +14,4 @@ In image processing application Convex hull is used.
 
 ### 2. Other than speed, what other measures of efficiency might one use in a real-world setting?
 
-`Answer` :
+`Answer` : Computer Memory, Network Usage
