@@ -15,3 +15,15 @@ In image processing application Convex hull is used.
 ### 2. Other than speed, what other measures of efficiency might one use in a real-world setting?
 
 `Answer` : Computer Memory, Network Usage
+
+### 3. Select a data structure that you have seen previously, and discuss its strengths and limitations
+
+`Answer` : Array Lists
+
+    Advantages:
+        1.  Access element in constant time.
+        2.  Element can be inserted in any place.
+
+    Disadvantages:
+        1.  Random access takes n time.
+        2.  Extra memory is utilized in making of index
