@@ -14,6 +14,7 @@
 
 ```cpp
 MERGE(A, p, q, r)
+
  n1 = q - p + 1
  n2 = r - q
  create arrays L[1..n1] and R[1..n2]
@@ -37,3 +38,9 @@ MERGE(A, p, q, r)
     A[k] = R[j]
     j = j + 1
 ```
+
+### 3. ![](https://i.ibb.co/xfvDzx4/my-basic-app.png)
+
+`Answer` :
+
+![](https://i.ibb.co/NWXmtnJ/my-basic-app.png)
