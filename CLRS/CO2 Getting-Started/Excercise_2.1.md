@@ -42,3 +42,24 @@ for i = 1 to A.length
 
 return NIL
 ```
+
+```
+Initialization : Initially the subarray is empty. So, none of its’ elements are equal to v.
+
+
+Maintenance : In i-th iteration, we check whether A[i] is equal to v or not. If yes, we terminate the loop or we continue the iteration. So, if the subarray A[1..i−1] did not contain v before the i-th iteration, the subarray A[1..i] will not contain v before the next iteration (unless i-th iteration terminates the loop).
+
+
+Termination: The loop terminates in either of the following cases,
+
+We have found index i such that v = Ai
+
+We reached the end of the array, i.e. we did not find v in the array A. So, we return NIL
+
+
+In either case, our algorithm does exactly what was required, which means the algorithm is correct.
+```
+
+### 4. Consider the problem of adding two n-bit binary integers, stored in two n-element arrays A and B. The sum of the two integers should be stored in binary form in an (n + 1)-element array C. State the problem formally and write pseudocode foradding the two integers.
+
+`Answer` :
