@@ -14,4 +14,8 @@
 
 ![](https://i.ibb.co/M9bvMTy/my-basic-app.png)
 
-### 3. What is the smallest value of n such that an algorithm whose running time is 100 $n^2$ runs faster than an algorithm whose running time is 2n on the same machine?
+### 3. What is the smallest value of n such that an algorithm whose running time is 100n^2 runs faster than an algorithm whose running time is 2n on the same machine?
+
+`Answer` :
+
+![](https://i.ibb.co/gMKrCqJ/my-basic-app.png)
