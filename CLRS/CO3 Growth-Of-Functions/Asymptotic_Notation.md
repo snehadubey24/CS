@@ -6,5 +6,5 @@
 
     There are mainly three types of Asymptotic Notation
         i. Big-O Notation
-        ii. Theta \theta Notation
-        iii. Omega /Omega Notation
+        ii.Big Theta Θ Notation
+        iii.Big Omega Ω Notation
