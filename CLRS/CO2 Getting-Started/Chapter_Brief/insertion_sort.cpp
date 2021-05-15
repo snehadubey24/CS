@@ -38,14 +38,6 @@ void insertionSort(int A[], int size)
     }
 }
 
-void printArr(int A[], int size)
-{
-    for (int i = 0; i < size; i++)
-    {
-        cout << A[i] << " ";
-    }
-}
-
 int main()
 {
     //Array Initialization
@@ -55,8 +47,5 @@ int main()
 
     //Sorting A
     insertionSort(A, size);
-
-    printArr(A, size);
-
     return 0;
 }
