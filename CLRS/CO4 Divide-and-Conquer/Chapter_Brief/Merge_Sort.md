@@ -2,6 +2,8 @@
 
 ---
 
+![](https://richardssoftware.blob.core.windows.net/images/mergesort.gif)
+
 ## PseudoCode
 
 ```cpp
