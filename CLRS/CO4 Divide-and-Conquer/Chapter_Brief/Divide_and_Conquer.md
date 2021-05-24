@@ -12,4 +12,26 @@
 
 ## Combine :
 
-- Combine the solutions to the subproblems into the solution for the original problem.
+- Combine the solutions of the subproblems into the solution for the original problem.
+
+---
+
+<br>
+<br>
+
+## Recurrence :
+
+- A recurrence is an equation or inequality that describes a function in terms of it's value on smaller Inputs.
+
+### Three methods for solving recurrences :
+
+i. Substitution Method
+ii. Recursion-tree Method
+iii. Master Method
+
+---
+
+<br>
+<br>
+
+# Master Theorem :
