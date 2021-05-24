@@ -58,34 +58,32 @@ public class Merge_Sort {
         int n1 = mid - low + 1;
         int n2 = high - mid;
 
-        int L[] = new int[n1 + 1];
-        int R[] = new int[n2 + 1];
+        int leftArr[] = new int[n1 + 1];
+        int rightArr[] = new int[n1 + 1];
 
-        // Copying the elements into the array
+        leftArr[n1] = Integer.MAX_VALUE;
+        rightArr[n2] = Integer.MAX_VALUE;
+
+        // Copying items into the array
         for (int i = 0; i < n1; i++) {
-            L[i] = arr[low + i];
+            leftArr[i] = arr[low + i];
         }
-
         for (int j = 0; j < n2; j++) {
-            R[j] = arr[(mid + 1) + j];
+            rightArr[j] = arr[mid + 1 + j];
         }
-
-        L[n1 + 1] = Integer.MAX_VALUE;
-        R[n2 + 1] = Integer.MAX_VALUE;
 
         int i = 0;
         int j = 0;
 
-        for (int k = 0; k <= high; k++) {
-            if (L[i] < R[j]) {
-                arr[k] = L[i];
+        for (int k = low; k <= high; k++) {
+            if (leftArr[i] < rightArr[j]) {
+                arr[k] = leftArr[i];
                 i++;
             } else {
-                arr[k] = R[j];
+                arr[k] = rightArr[j];
                 j++;
             }
         }
-
     }
 
     public static void merge_sort(int arr[], int low, int high) {
@@ -109,4 +107,5 @@ public class Merge_Sort {
         }
     }
 }
+
 ```
