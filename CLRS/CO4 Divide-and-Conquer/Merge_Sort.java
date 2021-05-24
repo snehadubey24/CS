@@ -1,60 +1,27 @@
 public class Merge_Sort {
 
-    // public static void merge(int arr[], int low, int mid, int high) {
-    // int n1 = mid - low + 1;
-    // int n2 = high - mid;
-
-    // int L[] = new int[n1 + 1];
-    // int R[] = new int[n2 + 1];
-
-    // // Copying the elements into the array
-    // for (int i = 0; i < n1; i++) {
-    // L[i] = arr[low + i];
-    // }
-
-    // for (int j = 0; j < n2; j++) {
-    // R[j] = arr[(mid + 1) + j];
-    // }
-
-    // L[n1 + 1] = Integer.MAX_VALUE;
-    // R[n2 + 1] = Integer.MAX_VALUE;
-
-    // int i = 0;
-    // int j = 0;
-
-    // for (int k = 0; k <= high; k++) {
-    // if (L[i] < R[j]) {
-    // arr[k] = L[i];
-    // i++;
-    // } else {
-    // arr[k] = R[j];
-    // j++;
-    // }
-    // }
-
-    // }
-
     public static void merge(int arr[], int low, int mid, int high) {
         int n1 = mid - low + 1;
         int n2 = high - mid;
 
-        int leftArr[] = new int[n1];
-        int rightArr[] = new int[n1];
+        int leftArr[] = new int[n1 + 1];
+        int rightArr[] = new int[n1 + 1];
 
         // Copying items into the array
-        for (int i = 0; i < n1; i++) {
-            leftArr[i] = arr[i];
+        for (int i = 0; i < n1 - 1; i++) {
+            leftArr[i] = arr[low + i];
         }
-        for (int j = 0; j < n2; j++) {
+        for (int j = 0; j < n2 - 1; j++) {
             rightArr[j] = arr[(mid + 1) + j];
         }
 
-        // Copying elements from the newly created array to the original array in a
-        // sorted order
+        leftArr[n1] = Integer.MAX_VALUE;
+        rightArr[n2] = Integer.MAX_VALUE;
+
         int i = 0;
         int j = 0;
-        int k = 0;
-        while (i < n1 && j < n2) {
+
+        for (int k = 0; k <= high; k++) {
             if (leftArr[i] < rightArr[j]) {
                 arr[k] = leftArr[i];
                 i++;
@@ -62,21 +29,7 @@ public class Merge_Sort {
                 arr[k] = rightArr[j];
                 j++;
             }
-            k++;
         }
-
-        while (i < n1) {
-            arr[k] = leftArr[i];
-            i++;
-            k++;
-        }
-
-        while (j < n2) {
-            arr[k] = rightArr[j];
-            j++;
-            k++;
-        }
-
     }
 
     public static void merge_sort(int arr[], int low, int high) {
