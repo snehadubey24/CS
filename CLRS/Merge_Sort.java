@@ -8,11 +8,11 @@ public class Merge_Sort {
         int R[] = new int[n2 + 1];
 
         // Copying elements into the newly created arrays
-        for (int i = 1; i <= n1; i++) {
-            L[i] = arr[low + i - 1];
+        for (int i = 0; i < n1; i++) {
+            L[i] = arr[low + i];
         }
 
-        for (int j = 1; j <= n2; j++) {
+        for (int j = 0; j < n2; j++) {
             R[j] = arr[mid + j];
         }
 
@@ -37,14 +37,14 @@ public class Merge_Sort {
         if (low < high) {
             int mid = (low + high) / 2;
             MERGE_SORT(arr, low, mid);
-            MERGE_SORT(arr, mid + 1, high);
+            MERGE_SORT(arr, (mid + 1), high);
             MERGE(arr, low, mid, high);
         }
     }
 
     public static void main(String[] args) {
 
-        int arr[] = { 12, 3, 27, 28, 43, 56, 72, 83, 44, 97, 44, 121 };
+        int arr[] = { 12, 3, 27, 28, 43, 56 };
         int low = 0;
         int high = arr.length - 1;
         MERGE_SORT(arr, low, high);
