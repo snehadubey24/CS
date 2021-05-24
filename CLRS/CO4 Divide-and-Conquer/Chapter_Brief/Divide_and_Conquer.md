@@ -25,9 +25,9 @@
 
 ### Three methods for solving recurrences :
 
-i. Substitution Method
-ii. Recursion-tree Method
-iii. Master Method
+- Substitution Method
+- Recursion-tree Method
+- Master Method
 
 ---
 
