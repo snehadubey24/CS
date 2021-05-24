@@ -34,6 +34,42 @@
 ```cpp
 
 MAX-HEAPIFY(A,i)
-    l = LEFT(i)
+
+    l = LEFT(i) //Left Child
+    r = RIGHT(i) //Right Child
+
+    if l <= A.heapSize and A[l] > A[i]
+        largest = l
+
+    else largest = i
+
+    if r <= A.heapSize and A[r] > A[largest]
+        largest = r
+
+    if largest != i
+        exchange A[i]  with A[largest]
+        MAX-HEAPIFY(A,largest)
+
+
+
+BUILD-MAX-HEAP(A)
+
+    A.heapSize = A.length
+
+    for i = A.length/2 downto 1 //It means to heapify only the nodes other than the leaf nodes
+        MAX-HEAPIFY(A,i)
+
+
+
+HEAPSORT(A)
+
+    BUILD-MAX-HEAP(A)
+
+    for i = A.length downto 2
+        exchange A[1] with A[i]
+        A.heapSize = A.heapSize - 1
+        MAX-HEAPIFY(A,1)
+
+
 
 ```
