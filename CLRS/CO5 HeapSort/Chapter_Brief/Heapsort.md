@@ -6,6 +6,8 @@
 
 - The (binary) heap data structure is an array object that we can view as a nearly complete binary tree. Each node of the tree corresopnds to an element of the array. The tree is completely filled on all levels except possibly the lowest (leaf nodes), which is filled in the left to right order.
 
+![](https://i.ibb.co/fSPfsdr/Annotation-2021-05-24-054223.png)
+
 ## Types of Heaps
 
 - Min Heap - The roots should be minimum for the entire tree/subtree.
