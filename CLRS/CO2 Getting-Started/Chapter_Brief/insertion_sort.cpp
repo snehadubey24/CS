@@ -11,12 +11,14 @@
 //                i = i - 1
 //            A[i + 1] = key
 
-//        Time Conplexity : O(n^2)
+//        Time Conplexity :
+Worst Case : O(n ^ 2)
+                 Average Case : O(n ^ 2)
 
 //Driver Program
 
 #include <iostream>
-using namespace std;
+                                    using namespace std;
 
 void insertionSort(int A[], int size)
 {
