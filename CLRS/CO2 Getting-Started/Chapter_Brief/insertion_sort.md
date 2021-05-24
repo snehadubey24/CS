@@ -20,7 +20,7 @@
 
     Time Complexity :
             Worst Case : O(n^2)
-            Average Case : O(n
+            Average Case : O(n^2)
             Insertion Sort is an in-place algorithm
 ```
 
