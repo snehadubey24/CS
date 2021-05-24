@@ -35,3 +35,5 @@ iii. Master Method
 <br>
 
 # Master Theorem :
+
+![](https://i.ibb.co/dcLbPR0/Annotation-2021-05-24-054223.png)
