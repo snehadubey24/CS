@@ -23,7 +23,11 @@
             Insertion Sort is an in-place algorithm
 ```
 
+<br>
+
 ## C++ Program :
+
+<br>
 
 ```cpp
 #include <iostream>
