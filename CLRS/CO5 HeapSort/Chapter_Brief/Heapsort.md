@@ -11,3 +11,29 @@
 - Min Heap - The roots should be minimum for the entire tree/subtree.
 
 - Max Heap - The roots should be maximum for the entire tree/subtree.
+
+### NOTE :
+
+- Children/Parent of a Node in Complete Binar Tree
+
+  - 0 based Indexing
+
+    - Left Child = 2 \* i + 1
+    - Right Child = 2 \* i + 2
+    - Parent Node = (i - 1) / 2
+
+  - 1 based Indexing (as in PseudoCode)
+
+    - Left Child = 2 \* i
+    - Right Child = 2 \* i + 1
+
+    - Parent Node = i / 2
+
+# PseudoCode
+
+```cpp
+
+MAX-HEAPIFY(A,i)
+    l = LEFT(i)
+
+```
