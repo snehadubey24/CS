@@ -38,6 +38,13 @@ MERGE(A,low,mid,high)
 
 
 
-MERGE_SORT()
+MERGE_SORT(A,low,high)
+
+    if low < high
+        mid = (low + high) / 2
+
+        MERGE_SORT(A,low,mid)
+        MERGE_SORT(A,mid+1,high)
+        MERGE(A,low,mid,high)
 
 ```
