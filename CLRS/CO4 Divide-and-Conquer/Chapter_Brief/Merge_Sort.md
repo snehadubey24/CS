@@ -17,10 +17,10 @@ MERGE(A,low,mid,high)
 
     // Copying Elements into the newly created array
     for i = 1 to n1
-        L[i] = A[low + i - 1]
+        L[i] = A[low + i]
 
     for j = 1 to n2
-        R[j] = A[mid + j]
+        R[j] = A[mid + 1 +j ]
 
     L[n1 + 1] = Math.Max_value
     R[n2 + 1] = Math.Max_value
