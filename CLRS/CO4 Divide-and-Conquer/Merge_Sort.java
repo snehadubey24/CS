@@ -1,11 +1,14 @@
 public class Merge_Sort {
-
     public static void merge(int arr[], int low, int mid, int high) {
         int n1 = mid - low + 1;
         int n2 = high - mid;
 
         int leftArr[] = new int[n1 + 1];
         int rightArr[] = new int[n1 + 1];
+
+        for (int i = low; i <= high; i++) {
+            System.out.println(arr[i]);
+        }
 
         // Copying items into the array
         for (int i = 0; i < n1 - 1; i++) {
@@ -21,7 +24,7 @@ public class Merge_Sort {
         int i = 0;
         int j = 0;
 
-        for (int k = 0; k <= high; k++) {
+        for (int k = low; k <= high; k++) {
             if (leftArr[i] < rightArr[j]) {
                 arr[k] = leftArr[i];
                 i++;
@@ -45,6 +48,7 @@ public class Merge_Sort {
         int arr[] = { 5, 12, 81, 64, 56, 32 };
         int low = 0;
         int high = arr.length - 1;
+        System.out.println(arr);
         merge_sort(arr, low, high);
 
         // Printing the array
