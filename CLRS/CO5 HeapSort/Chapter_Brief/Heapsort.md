@@ -47,7 +47,7 @@ MAX-HEAPIFY(A,i)
         largest = r
 
     if largest != i
-        exchange A[i]  with A[largest]
+        exchange A[i] with A[largest]
         MAX-HEAPIFY(A,largest)
 
 
