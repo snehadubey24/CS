@@ -27,7 +27,6 @@ QUICKSORT(A,low,high)
 ## Java Program
 
 ```java
-
 public class QuickSort {
 
     public static void swap(int arr[], int i, int j) {
