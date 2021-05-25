@@ -74,6 +74,12 @@ HEAPSORT(A)
 
 
 
+Time Complexity : O(n logn)
+    * n - Build Maxheap
+    * logn - max-heapify
+
+HeapSort is an In-Place Sorting Algorithm.
+
 ```
 
 # C++ Program :
